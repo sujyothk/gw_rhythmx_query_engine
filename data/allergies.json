@@ -1,0 +1,567 @@
+[
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-penicillin-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "1995-06-15T10:00:00.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Allergy:</b> Penicillin</p><p><b>Status:</b> Active</p><p><b>Severity:</b> Severe</p><p><b>Type:</b> Allergy</p><p><b>Onset:</b> Age 10 (1995-06-10)</p></div>"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "http://hospital.example.org/allergies",
+        "value": "ALLERGY-001"
+      }
+    ],
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ],
+      "text": "Active"
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ],
+      "text": "Confirmed"
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "high",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "7980",
+          "display": "Penicillin"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "764146007",
+          "display": "Penicillin (substance)"
+        }
+      ],
+      "text": "Penicillin"
+    },
+    "patient": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-1995-001",
+      "display": "Pediatric Visit 1995"
+    },
+    "onsetDateTime": "1995-06-10",
+    "recordedDate": "1995-06-15T10:00:00.000Z",
+    "recorder": {
+      "reference": "Practitioner/practitioner-pediatric-001",
+      "display": "Dr. Pediatrician (Historical Record)"
+    },
+    "asserter": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "reaction": [
+      {
+        "substance": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "764146007",
+              "display": "Penicillin (substance)"
+            }
+          ],
+          "text": "Penicillin"
+        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "39579001",
+                "display": "Anaphylaxis"
+              }
+            ],
+            "text": "Anaphylaxis"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "247472004",
+                "display": "Urticaria"
+              }
+            ],
+            "text": "Hives"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "267036007",
+                "display": "Dyspnea"
+              }
+            ],
+            "text": "Difficulty breathing"
+          }
+        ],
+        "severity": "severe",
+        "onset": "1995-06-10T14:30:00.000Z",
+        "description": "Severe anaphylactic reaction within 30 minutes of penicillin administration. Symptoms included generalized urticaria, facial swelling, difficulty breathing, and hypotension. Required emergency treatment with epinephrine and hospitalization."
+      }
+    ],
+    "note": [
+      {
+        "text": "SEVERE ALLERGY - Anaphylaxis to penicillin. Patient must avoid all penicillin derivatives including amoxicillin, ampicillin, dicloxacillin. Use alternative antibiotics such as cephalexin or azithromycin when indicated. Patient wears medical alert bracelet.",
+        "time": "1995-06-15T10:00:00.000Z"
+      },
+      {
+        "text": "Allergy confirmed and documented in medical record since childhood. Patient is aware and avoids penicillin-containing medications. Cross-reactivity with cephalosporins is possible but has not been tested.",
+        "time": "2010-01-15T10:00:00.000Z",
+        "authorReference": {
+          "reference": "Practitioner/practitioner-001",
+          "display": "Dr. Michael Chen, MD"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-sulfa-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2003-08-20T11:15:00.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Allergy:</b> Sulfonamide antibiotics</p><p><b>Status:</b> Active</p><p><b>Severity:</b> Moderate</p><p><b>Type:</b> Allergy</p><p><b>Onset:</b> 2003-08-15</p></div>"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "http://hospital.example.org/allergies",
+        "value": "ALLERGY-002"
+      }
+    ],
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ],
+      "text": "Active"
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ],
+      "text": "Confirmed"
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "moderate",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "10689",
+          "display": "Sulfamethoxazole"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "372554003",
+          "display": "Sulfonamide antibacterial (substance)"
+        }
+      ],
+      "text": "Sulfonamide antibiotics"
+    },
+    "patient": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-2003-001",
+      "display": "College Health Visit 2003"
+    },
+    "onsetDateTime": "2003-08-15",
+    "recordedDate": "2003-08-20T11:15:00.000Z",
+    "recorder": {
+      "reference": "Practitioner/practitioner-college-001",
+      "display": "Dr. College Health (Historical Record)"
+    },
+    "asserter": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "reaction": [
+      {
+        "substance": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "372554003",
+              "display": "Sulfonamide antibacterial (substance)"
+            }
+          ],
+          "text": "Sulfonamide antibiotics"
+        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "247472004",
+                "display": "Urticaria"
+              }
+            ],
+            "text": "Hives"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "23924001",
+                "display": "Skin rash"
+              }
+            ],
+            "text": "Rash"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "271807003",
+                "display": "Pruritus"
+              }
+            ],
+            "text": "Itching"
+          }
+        ],
+        "severity": "moderate",
+        "onset": "2003-08-15T16:00:00.000Z",
+        "description": "Developed widespread urticarial rash and pruritus 2 days after starting Bactrim (trimethoprim/sulfamethoxazole) for urinary tract infection. Rash resolved after discontinuing medication and treatment with antihistamines."
+      }
+    ],
+    "note": [
+      {
+        "text": "Moderate allergic reaction to sulfonamide antibiotics. Patient experienced urticaria and pruritus. Avoid trimethoprim/sulfamethoxazole and other sulfonamide antibiotics. Note: Does not include sulfa-containing non-antibiotic medications such as furosemide or sulfonylureas, but patient should be monitored if these are prescribed.",
+        "time": "2003-08-20T11:15:00.000Z"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-latex-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2011-03-10T09:30:00.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Allergy:</b> Latex</p><p><b>Status:</b> Active</p><p><b>Severity:</b> Moderate</p><p><b>Type:</b> Allergy</p><p><b>Onset:</b> 2011-03-05</p></div>"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "http://hospital.example.org/allergies",
+        "value": "ALLERGY-003"
+      }
+    ],
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ],
+      "text": "Active"
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ],
+      "text": "Confirmed"
+    },
+    "type": "allergy",
+    "category": [
+      "environment"
+    ],
+    "criticality": "moderate",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "256259004",
+          "display": "Latex (substance)"
+        },
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/hch",
+          "code": "C0699794",
+          "display": "Latex"
+        }
+      ],
+      "text": "Latex"
+    },
+    "patient": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-2011-001",
+      "display": "Occupational Health Visit 2011"
+    },
+    "onsetDateTime": "2011-03-05",
+    "recordedDate": "2011-03-10T09:30:00.000Z",
+    "recorder": {
+      "reference": "Practitioner/practitioner-001",
+      "display": "Dr. Michael Chen, MD"
+    },
+    "asserter": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "reaction": [
+      {
+        "substance": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "256259004",
+              "display": "Latex (substance)"
+            }
+          ],
+          "text": "Latex"
+        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "247472004",
+                "display": "Urticaria"
+              }
+            ],
+            "text": "Hives"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "271807003",
+                "display": "Pruritus"
+              }
+            ],
+            "text": "Itching"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "267036007",
+                "display": "Contact dermatitis"
+              }
+            ],
+            "text": "Contact dermatitis"
+          }
+        ],
+        "severity": "moderate",
+        "onset": "2011-03-05T12:00:00.000Z",
+        "exposureRoute": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "419199007",
+              "display": "Contact route"
+            }
+          ],
+          "text": "Contact"
+        },
+        "description": "Developed contact dermatitis and urticaria on hands after frequent use of latex gloves in hospital setting. Symptoms occur within hours of latex glove contact."
+      }
+    ],
+    "note": [
+      {
+        "text": "Latex allergy developed due to occupational exposure (healthcare worker). Patient uses nitrile gloves instead. Symptoms include contact dermatitis and hives at contact sites. Avoid latex-containing medical devices and products. Note: Some fruits may cross-react (banana, avocado, kiwi) - monitor if symptoms develop.",
+        "time": "2011-03-10T09:30:00.000Z"
+      },
+      {
+        "text": "Allergy management plan in place at workplace. Patient's workplace has been notified and accommodates with latex-free alternatives.",
+        "time": "2011-03-15T10:00:00.000Z",
+        "authorReference": {
+          "reference": "Practitioner/practitioner-001",
+          "display": "Dr. Michael Chen, MD"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-iodine-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2019-05-12T14:20:00.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Allergy:</b> Iodinated contrast media</p><p><b>Status:</b> Active</p><b>Severity:</b> Mild</p><p><b>Type:</b> Intolerance</p><p><b>Onset:</b> 2019-05-08</p></div>"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "http://hospital.example.org/allergies",
+        "value": "ALLERGY-004"
+      }
+    ],
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ],
+      "text": "Active"
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ],
+      "text": "Confirmed"
+    },
+    "type": "intolerance",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "387362009",
+          "display": "Iodinated contrast media (substance)"
+        },
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "16643",
+          "display": "Iohexol"
+        }
+      ],
+      "text": "Iodinated contrast media"
+    },
+    "patient": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-2019-001",
+      "display": "CT Scan 2019"
+    },
+    "onsetDateTime": "2019-05-08",
+    "recordedDate": "2019-05-12T14:20:00.000Z",
+    "recorder": {
+      "reference": "Practitioner/practitioner-radiology-001",
+      "display": "Dr. Radiology (Historical Record)"
+    },
+    "asserter": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "reaction": [
+      {
+        "substance": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387362009",
+              "display": "Iodinated contrast media (substance)"
+            }
+          ],
+          "text": "Iodinated contrast media"
+        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "422587007",
+                "display": "Nausea"
+              }
+            ],
+            "text": "Nausea"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "422400008",
+                "display": "Vomiting"
+              }
+            ],
+            "text": "Vomiting"
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "84229001",
+                "display": "Feeling of warmth"
+              }
+            ],
+            "text": "Warmth sensation"
+          }
+        ],
+        "severity": "mild",
+        "onset": "2019-05-08T10:15:00.000Z",
+        "exposureRoute": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "47625008",
+              "display": "Intravenous route"
+            }
+          ],
+          "text": "Intravenous"
+        },
+        "description": "Mild adverse reaction to iodinated contrast during CT scan. Experienced nausea, vomiting, and feeling of warmth. Symptoms resolved within 30 minutes without treatment."
+      }
+    ],
+    "note": [
+      {
+        "text": "Mild intolerance to iodinated contrast media. Patient experienced nausea and vomiting during CT scan with contrast. Consider using low-osmolar contrast or non-iodinated alternatives for future imaging studies if needed. Note: This is NOT an allergy to iodine itself (dietary iodine is safe), but specifically to iodinated contrast media.",
+        "time": "2019-05-12T14:20:00.000Z"
+      }
+    ]
+  }
+]
+

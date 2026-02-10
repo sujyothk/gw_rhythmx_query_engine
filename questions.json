@@ -1,0 +1,9 @@
+{
+  "questions": [
+    "Does the patient have asthma? Provide ICD-10 or SNOMED code if present.",
+    "List medications used for hypertension and include codes.",
+    "What are the latest renal function lab results (creatinine/eGFR/BUN)?",
+    "List recorded allergies and their reactions.",
+    "Summarize the last two encounters with dates and reasons."
+  ]
+}

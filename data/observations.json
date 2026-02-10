@@ -1,0 +1,755 @@
+[
+  {
+    "resourceType": "Observation",
+    "id": "observation-blood-pressure-2012-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2012-05-15T10:15:00.000Z",
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+      ]
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation:</b> Blood Pressure</p><p><b>Status:</b> Final</p><p><b>Value:</b> 145/92 mmHg</p><p><b>Date:</b> 2012-05-15</p></div>"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "http://hospital.example.org/observations",
+        "value": "OBS-2012-001"
+      }
+    ],
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ],
+        "text": "Vital Signs"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "85354-9",
+          "display": "Blood pressure panel with all children optional"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "75367002",
+          "display": "Blood pressure"
+        }
+      ],
+      "text": "Blood Pressure"
+    },
+    "subject": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-2012-001",
+      "display": "Annual Physical 2012"
+    },
+    "effectiveDateTime": "2012-05-15T10:15:00.000Z",
+    "issued": "2012-05-15T10:15:00.000Z",
+    "performer": [
+      {
+        "reference": "Practitioner/practitioner-001",
+        "display": "Dr. Michael Chen, MD"
+      }
+    ],
+    "valueQuantity": {
+      "value": 145,
+      "unit": "mmHg",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    },
+    "component": [
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271649006",
+              "display": "Systolic blood pressure"
+            }
+          ],
+          "text": "Systolic BP"
+        },
+        "valueQuantity": {
+          "value": 145,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "High"
+          }
+        ]
+      },
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271650006",
+              "display": "Diastolic blood pressure"
+            }
+          ],
+          "text": "Diastolic BP"
+        },
+        "valueQuantity": {
+          "value": 92,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "High"
+          }
+        ]
+      }
+    ],
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ],
+        "text": "Elevated blood pressure consistent with stage 1 hypertension"
+      }
+    ],
+    "note": [
+      {
+        "text": "Blood pressure elevated. Patient sitting, rested for 5 minutes. Repeat measurement recommended.",
+        "time": "2012-05-15T10:15:00.000Z"
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "observation-heart-rate-2012-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2012-05-15T10:15:00.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation:</b> Heart Rate</p><p><b>Status:</b> Final</p><p><b>Value:</b> 72 bpm</p><p><b>Date:</b> 2012-05-15</p></div>"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "http://hospital.example.org/observations",
+        "value": "OBS-2012-002"
+      }
+    ],
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ],
+        "text": "Vital Signs"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart rate"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "364075005",
+          "display": "Heart rate"
+        }
+      ],
+      "text": "Heart Rate"
+    },
+    "subject": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-2012-001",
+      "display": "Annual Physical 2012"
+    },
+    "effectiveDateTime": "2012-05-15T10:15:00.000Z",
+    "issued": "2012-05-15T10:15:00.000Z",
+    "performer": [
+      {
+        "reference": "Practitioner/practitioner-001",
+        "display": "Dr. Michael Chen, MD"
+      }
+    ],
+    "valueQuantity": {
+      "value": 72,
+      "unit": "bpm",
+      "system": "http://unitsofmeasure.org",
+      "code": "/min"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ],
+        "text": "Normal"
+      }
+    ],
+    "referenceRange": [
+      {
+        "low": {
+          "value": 60,
+          "unit": "bpm",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "high": {
+          "value": 100,
+          "unit": "bpm",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "text": "Normal range: 60-100 bpm"
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "observation-dexa-scan-2022-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2022-05-20T10:00:00.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation:</b> DEXA Scan - T-Score</p><p><b>Status:</b> Final</p><p><b>Value:</b> T-score -1.5 (Osteopenia)</p><p><b>Date:</b> 2022-05-20</p></div>"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "http://hospital.example.org/observations",
+        "value": "OBS-2022-001"
+      }
+    ],
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "imaging",
+            "display": "Imaging"
+          }
+        ],
+        "text": "Imaging"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "38269-7",
+          "display": "DXA Bone density T score"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "399216008",
+          "display": "Dual-energy X-ray absorptiometry"
+        }
+      ],
+      "text": "DEXA Bone Density T-Score"
+    },
+    "subject": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-2022-001",
+      "display": "DEXA Scan Follow-up 2022"
+    },
+    "effectiveDateTime": "2022-05-20T09:00:00.000Z",
+    "issued": "2022-05-20T10:00:00.000Z",
+    "performer": [
+      {
+        "reference": "Practitioner/practitioner-radiology-001",
+        "display": "Dr. Radiology (Historical Record)"
+      }
+    ],
+    "valueQuantity": {
+      "value": -1.5,
+      "unit": "SD",
+      "system": "http://unitsofmeasure.org",
+      "code": "{SD}"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "L",
+            "display": "Low"
+          }
+        ],
+        "text": "Osteopenia (T-score between -1.0 and -2.5)"
+      }
+    ],
+    "bodySite": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "71341001",
+          "display": "Bone structure of lumbar vertebra"
+        }
+      ],
+      "text": "Lumbar spine"
+    },
+    "method": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "399216008",
+          "display": "Dual-energy X-ray absorptiometry"
+        }
+      ],
+      "text": "DEXA Scan"
+    },
+    "referenceRange": [
+      {
+        "text": "Normal: T-score ≥ -1.0; Osteopenia: T-score -1.0 to -2.5; Osteoporosis: T-score ≤ -2.5"
+      }
+    ],
+    "note": [
+      {
+        "text": "DEXA scan shows T-score of -1.5 at lumbar spine, indicating osteopenia. Recommend calcium and vitamin D supplementation, weight-bearing exercise. Repeat scan in 2 years.",
+        "time": "2022-05-20T10:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "observation-bmi-2012-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2012-05-15T10:20:00.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation:</b> Body Mass Index</p><p><b>Status:</b> Final</p><p><b>Value:</b> 23.5 kg/m²</p><p><b>Date:</b> 2012-05-15</p></div>"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "http://hospital.example.org/observations",
+        "value": "OBS-2012-003"
+      }
+    ],
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ],
+        "text": "Vital Signs"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body mass index (BMI) [Ratio]"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "60621009",
+          "display": "Body mass index"
+        }
+      ],
+      "text": "Body Mass Index (BMI)"
+    },
+    "subject": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-2012-001",
+      "display": "Annual Physical 2012"
+    },
+    "effectiveDateTime": "2012-05-15T10:20:00.000Z",
+    "issued": "2012-05-15T10:20:00.000Z",
+    "performer": [
+      {
+        "reference": "Practitioner/practitioner-001",
+        "display": "Dr. Michael Chen, MD"
+      }
+    ],
+    "valueQuantity": {
+      "value": 23.5,
+      "unit": "kg/m²",
+      "system": "http://unitsofmeasure.org",
+      "code": "kg/m2"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ],
+        "text": "Normal BMI (18.5-24.9)"
+      }
+    ],
+    "referenceRange": [
+      {
+        "low": {
+          "value": 18.5,
+          "unit": "kg/m²",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        },
+        "high": {
+          "value": 24.9,
+          "unit": "kg/m²",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        },
+        "text": "Normal range: 18.5-24.9 kg/m²"
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "observation-blood-glucose-2012-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2012-05-15T08:30:00.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation:</b> Fasting Blood Glucose</p><p><b>Status:</b> Final</p><p><b>Value:</b> 95 mg/dL</p><p><b>Date:</b> 2012-05-15</p></div>"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "http://hospital.example.org/observations",
+        "value": "OBS-2012-004"
+      }
+    ],
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ],
+        "text": "Laboratory"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2339-0",
+          "display": "Glucose [Mass/volume] in Blood"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "33747003",
+          "display": "Glucose measurement"
+        }
+      ],
+      "text": "Fasting Blood Glucose"
+    },
+    "subject": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-2012-001",
+      "display": "Annual Physical 2012"
+    },
+    "effectiveDateTime": "2012-05-15T08:30:00.000Z",
+    "issued": "2012-05-15T09:00:00.000Z",
+    "performer": [
+      {
+        "reference": "Practitioner/practitioner-lab-001",
+        "display": "Lab Technician"
+      }
+    ],
+    "valueQuantity": {
+      "value": 95,
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ],
+        "text": "Normal fasting glucose"
+      }
+    ],
+    "referenceRange": [
+      {
+        "low": {
+          "value": 70,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "high": {
+          "value": 100,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "text": "Normal fasting: 70-100 mg/dL"
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "observation-cholesterol-total-2012-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2012-05-15T09:00:00.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation:</b> Total Cholesterol</p><p><b>Status:</b> Final</p><p><b>Value:</b> 185 mg/dL</p><p><b>Date:</b> 2012-05-15</p></div>"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "http://hospital.example.org/observations",
+        "value": "OBS-2012-005"
+      }
+    ],
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ],
+        "text": "Laboratory"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "166600001",
+          "display": "Total cholesterol measurement"
+        }
+      ],
+      "text": "Total Cholesterol"
+    },
+    "subject": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-2012-001",
+      "display": "Annual Physical 2012"
+    },
+    "effectiveDateTime": "2012-05-15T08:00:00.000Z",
+    "issued": "2012-05-15T09:00:00.000Z",
+    "performer": [
+      {
+        "reference": "Practitioner/practitioner-lab-001",
+        "display": "Lab Technician"
+      }
+    ],
+    "valueQuantity": {
+      "value": 185,
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ],
+        "text": "Normal total cholesterol"
+      }
+    ],
+    "referenceRange": [
+      {
+        "text": "Desirable: <200 mg/dL; Borderline high: 200-239 mg/dL; High: ≥240 mg/dL"
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "observation-temperature-2012-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2012-05-15T10:15:00.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation:</b> Body Temperature</p><p><b>Status:</b> Final</p><p><b>Value:</b> 98.6 °F</p><p><b>Date:</b> 2012-05-15</p></div>"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "http://hospital.example.org/observations",
+        "value": "OBS-2012-006"
+      }
+    ],
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ],
+        "text": "Vital Signs"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8310-5",
+          "display": "Body temperature"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "386725007",
+          "display": "Body temperature"
+        }
+      ],
+      "text": "Body Temperature"
+    },
+    "subject": {
+      "reference": "Patient/patient-12345",
+      "display": "Dr. Sarah Jane Mitchell"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-2012-001",
+      "display": "Annual Physical 2012"
+    },
+    "effectiveDateTime": "2012-05-15T10:15:00.000Z",
+    "issued": "2012-05-15T10:15:00.000Z",
+    "performer": [
+      {
+        "reference": "Practitioner/practitioner-001",
+        "display": "Dr. Michael Chen, MD"
+      }
+    ],
+    "valueQuantity": {
+      "value": 98.6,
+      "unit": "°F",
+      "system": "http://unitsofmeasure.org",
+      "code": "[degF]"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ],
+        "text": "Normal body temperature"
+      }
+    ],
+    "referenceRange": [
+      {
+        "low": {
+          "value": 97.0,
+          "unit": "°F",
+          "system": "http://unitsofmeasure.org",
+          "code": "[degF]"
+        },
+        "high": {
+          "value": 99.5,
+          "unit": "°F",
+          "system": "http://unitsofmeasure.org",
+          "code": "[degF]"
+        },
+        "text": "Normal range: 97.0-99.5 °F"
+      }
+    ]
+  }
+]
+
