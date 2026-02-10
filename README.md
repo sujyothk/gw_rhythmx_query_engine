@@ -1,6 +1,6 @@
-# Rhythmx Query Engine (FHIR) — Local LLM, No Paid APIs
+# Rhythmx Query Engine (FHIR)
 
-This submission implements a **FHIR query engine** that prioritizes **accuracy and validation transparency** while using a **local LLM** (no paid APIs).
+This submission implements a **FHIR query engine** that prioritizes **accuracy and validation transparency** while using a **local LLM**.
 
 ## Required Output Format (enforced)
 
